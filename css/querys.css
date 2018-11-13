@@ -1,0 +1,23 @@
+@media screen and (min-width: 400px) {
+    nav h1 a {
+        color: #fff;
+        font-size: 10pt;
+        font-weight: 200;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+    }
+    .restaurants-list-container {
+        padding: 30px 0px 30px 0px;
+    }
+    #restaurant-img {
+        width: 100%;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .restaurants-list-container {
+        padding: 30px 30px 30px 30px;
+    }
+}
