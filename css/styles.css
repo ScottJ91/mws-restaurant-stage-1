@@ -1,7 +1,7 @@
 @charset "utf-8";
 :root {
     --primary-nav: 1.5rem;
-    --main-color: #9B59B6;
+    --main-color: rgb(106, 89, 182);
     --secondary-color: #DC143C;
     --third-color: #ececec;
     --fourth-color: #2A7AB0;
