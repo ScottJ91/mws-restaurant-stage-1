@@ -14,34 +14,29 @@
     <title>Restaurant Reviews</title>
 </head>
 
-<body>
-    <header role="banner" class="css-grid-container-front-page">
-        <nav role="navigation">
-            <h1>
-                <a href="/">Restaurant Reviews</a>
-            </h1>
+<body class="start-page">
+    <a href="#filter-text" class="skip-link">Skip to filter</a>
+    <header>
+        <nav class="page-nav" aria-label="restaurant reviews">
+            <h1 class="page-title"><a href="/">Restaurant Reviews</a></h1>
         </nav>
     </header>
 
-    <main id="maincontent" role="main">
-        <section id="map-container" aria-label="interactive map of New York with restaurants">
-            <div id="map" role="application"></div>
+    <main class="main-content" id="maincontent">
+        <section class="map-container" id="map-container" role="application">
+            <div class="map" id="map"></div>
         </section>
-
-        <section id="restaurant-filter">
+        <section class="restaurants">
             <div class="filter-options">
-                <h2 tabindex="0">Filter Results</h2>
-                <div class="drop-down-btns">
-
-                    <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+                <h2 id="filter-text" tabindex="-1">Filter</h2>
+                <select id="neighborhoods-select" name="neighborhoods" role="listbox" onchange="updateRestaurants()">
             <option value="all">All Neighborhoods</option>
           </select>
-
-                    <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-          <option value="all">All Cuisines</option>
-        </select>
-                </div>
-                <ul id="restaurants-list"></ul>
+                <select id="cuisines-select" name="cuisines" role="listbox" onchange="updateRestaurants()">
+            <option value="all">All Cuisines</option>
+          </select>
+            </div>
+            <ul class="restaurants-listing" id="restaurants-list"></ul>
         </section>
     </main>
 
