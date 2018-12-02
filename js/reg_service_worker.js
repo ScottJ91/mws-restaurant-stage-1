@@ -1,9 +1,12 @@
+// registers serviceworker
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./service_worker.js')
-        .then(function() {
-            console.log('Service Worker Registration Activated!');
+    console.log('Service worker authorization in progress.');
+    navigator.serviceWorker.register('./service_worker.js').then(function() {
+            console.log('Authorization Activated!');
         })
         .catch(function() {
-            console.log('Service Worker Registration Unsuccessful!');
-        });
+            console.log('Authorization Unsuccessful!');
+        })
+} else {
+    console.log('Service worker not supported.');
 }
